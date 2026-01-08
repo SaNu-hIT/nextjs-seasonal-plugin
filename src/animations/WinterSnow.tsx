@@ -56,7 +56,7 @@ export const WinterSnow: React.FC<AnimationProps> = ({
                         // @ts-ignore - CSS custom properties
                         '--drift': `${flake.drift}px`,
                         pointerEvents: 'none',
-                        boxShadow: `0 0 ${flake.size}px ${defaultColor}`,
+                        boxShadow: `0 0 2px rgba(0,0,0,0.1), 0 0 ${flake.size}px ${defaultColor}`,
                     }}
                 />
             ))}

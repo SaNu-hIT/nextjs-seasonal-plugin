@@ -1,6 +1,6 @@
 {
   "name": "nextjs-seasonal-plugin",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A Next.js plugin for seasonal and holiday background animations",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -31,6 +31,10 @@
     "celebrations"
   ],
   "author": "Saneesh",
+  "funding": {
+    "type": "individual",
+    "url": "https://buymeacoffee.com/sanufelizc"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
