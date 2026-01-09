@@ -11,7 +11,7 @@ interface CustomParticleInstance {
     delay: number;
     drift: number;
     rotation: number;
-    element: string | React.ReactNode;
+    element: any;
 }
 
 export const CustomTheme: React.FC<AnimationProps> = ({

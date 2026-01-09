@@ -40,7 +40,7 @@ export const SpringFlowers: React.FC<AnimationProps> = ({
                 left: random(0, 100),
                 size: random(15, 25),
                 duration: random(10, 20),
-                delay: random(0, 5),
+                delay: random(-20, 0),
                 drift: random(-80, 80),
                 rotation: random(-360, 360),
                 shape: petalShapes[randomInt(0, petalShapes.length - 1)],
@@ -58,7 +58,7 @@ export const SpringFlowers: React.FC<AnimationProps> = ({
             butterflyArray.push({
                 id: i,
                 duration: random(8, 15),
-                delay: random(0, 8),
+                delay: random(-20, 0),
                 size: random(20, 30),
             });
         }

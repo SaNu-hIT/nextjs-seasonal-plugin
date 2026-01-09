@@ -16,6 +16,7 @@ Perfect for adding a touch of magic to **personal portfolios, e-commerce sites, 
 
 ![npm version](https://img.shields.io/npm/v/nextjs-seasonal-plugin)
 ![license](https://img.shields.io/npm/l/nextjs-seasonal-plugin)
+[![Live Demo](https://img.shields.io/badge/demo-live-green)](https://seasonal-demo-standalone-live.vercel.app/)
 
 ## ✨ Features
 

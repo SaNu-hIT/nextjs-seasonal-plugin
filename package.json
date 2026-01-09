@@ -1,6 +1,6 @@
 {
   "name": "nextjs-seasonal-plugin",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "A Next.js plugin for seasonal and holiday background animations",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -48,7 +48,7 @@
     "type": "git",
     "url": "https://github.com/SaNu-hIT/nextjs-seasonal-plugin.git"
   },
-  "homepage": "https://github.com/SaNu-hIT/nextjs-seasonal-plugin#readme",
+  "homepage": "https://seasonal-demo-standalone-live.vercel.app/",
   "bugs": {
     "url": "https://github.com/SaNu-hIT/nextjs-seasonal-plugin/issues"
   },

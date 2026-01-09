@@ -47,7 +47,7 @@ export const SummerSun: React.FC<AnimationProps> = ({
 
     const particles = useMemo<Particle[]>(() => {
         const parts: Particle[] = [];
-        const count = Math.floor(particleCount * (intensity / 100) * 0.3);
+        const count = Math.floor(particleCount * (intensity / 100));
 
         for (let i = 0; i < count; i++) {
             parts.push({
@@ -55,7 +55,7 @@ export const SummerSun: React.FC<AnimationProps> = ({
                 left: random(0, 100),
                 size: random(3, 8),
                 duration: random(10, 20),
-                delay: random(0, 5),
+                delay: random(-20, 0),
                 drift: random(-30, 30),
             });
         }
