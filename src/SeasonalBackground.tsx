@@ -13,6 +13,8 @@ import { DiwaliTheme } from './animations/holidays/DiwaliTheme';
 import { NewYearTheme } from './animations/holidays/NewYearTheme';
 import { HalloweenTheme } from './animations/holidays/HalloweenTheme';
 import { CustomTheme } from './animations/holidays/CustomTheme';
+import { Rain } from './animations/Rain';
+import { Clouds } from './animations/Clouds';
 import './styles/animations.css';
 
 export const SeasonalBackground: React.FC<SeasonalBackgroundProps> = ({
@@ -28,6 +30,7 @@ export const SeasonalBackground: React.FC<SeasonalBackgroundProps> = ({
     opacity = 1,
     className = '',
     disableAutoDetect = false,
+    weather,
 }) => {
     // Don't render if disabled
     if (!enabled) {
@@ -76,6 +79,19 @@ export const SeasonalBackground: React.FC<SeasonalBackgroundProps> = ({
         }
     };
 
+    const renderWeather = () => {
+        switch (weather) {
+            case 'rain':
+                return <Rain {...animationProps} />;
+            case 'cloudy':
+                return <Clouds {...animationProps} />;
+            case 'snow':
+                return <WinterSnow {...animationProps} />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <div
             className={`seasonal-background ${className}`}
@@ -92,6 +108,7 @@ export const SeasonalBackground: React.FC<SeasonalBackgroundProps> = ({
             aria-hidden="true"
         >
             {renderAnimation()}
+            {renderWeather()}
         </div>
     );
 };

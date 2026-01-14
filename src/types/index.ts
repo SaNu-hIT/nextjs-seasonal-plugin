@@ -37,6 +37,7 @@ export interface SeasonalBackgroundProps {
     opacity?: number;
     className?: string;
     disableAutoDetect?: boolean;
+    weather?: 'rain' | 'cloudy' | 'snow' | 'none' | null;
 }
 
 export interface AnimationProps {
